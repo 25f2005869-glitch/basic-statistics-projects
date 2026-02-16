@@ -49,3 +49,4 @@ To practice statistical fundamentals through hands-on data analysis and visualiz
 ## Presentation Link
 [View Presentation](./Statistics_Extra_Activities_Presentation.pptx)
 https://github.com/25f2005869-glitch/statistics-1-extra-activities/blob/main/STATISTICS%20-%201%20Activity%20-%204.xlsx
+https://github.com/25f2005869-glitch/statistics-1-extra-activities/blob/main/ACTIVITY%203.xlsx
