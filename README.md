@@ -56,6 +56,8 @@ This repository contains extra activities, practice problems, and mini projects 
 - Theoretical Distribution  
 - Comparative Analysis  
 - Data Visualization
+- Experimental Distribution
+- Theoretical Distribution
 
 ## Purpose
 To practice statistical fundamentals through hands-on data analysis and visualization.
