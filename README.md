@@ -44,6 +44,19 @@ This repository contains extra activities, practice problems, and mini projects 
 
 ---
 
+## Activity 4
+
+### Files Included
+- STATISTICS - 1 Activity - 4.xlsx — Excel analysis file  
+- statistics_activity_4_chart.png — Distribution chart  
+- Statistics_Extra_Activities_Presentation.pptx — PowerPoint presentation  
+
+### Topics Covered
+- Experimental Distribution  
+- Theoretical Distribution  
+- Comparative Analysis  
+- Data Visualization
+
 ## Purpose
 To practice statistical fundamentals through hands-on data analysis and visualization.
 ## Presentation Link
