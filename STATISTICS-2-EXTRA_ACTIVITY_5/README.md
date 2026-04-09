@@ -15,7 +15,7 @@ For sample sizes:
 \[
 n \in \{5, 10, 30, 50, 100\}
 \]
-we repeatedly draw **100 samples** (with replacement), compute their **sample means**, and compare the empirical distribution to:
+we repeatedly draw **100 samples** (with replacement), compute their **sample means**, and compare the empirical distribution to the theoretical normal distribution:
 \[
 \bar{X} \approx N\left(\mu,\frac{\sigma^2}{n}\right)
 \]
@@ -24,11 +24,11 @@ Key idea: As \(n\) increases, the distribution of \(\bar{X}\) becomes more norma
 ### Case II — Sampling distribution of the standardized sum
 For the same \(n\), we compute:
 \[
-Y = \sum_{i=1}^{n} X_i
+Y=\sum_{i=1}^{n}X_i
 \]
 and standardize:
 \[
-Z = \frac{Y - n\mu}{\sigma\sqrt{n}}
+Z=\frac{Y-n\mu}{\sigma\sqrt{n}}
 \]
 We compare the empirical distribution of \(Z\) to:
 \[
@@ -54,7 +54,7 @@ Key idea: As \(n\) increases, \(Z\) becomes closer to standard normal.
 - scipy (`scipy.stats.norm`)
 - openpyxl (Excel reading)
 
-Install (local run):
+Install (if running locally):
 ```bash
 pip install numpy pandas matplotlib scipy openpyxl
 ```
@@ -78,6 +78,7 @@ pip install numpy pandas matplotlib scipy openpyxl
 ---
 
 ## Notebook summary (Method)
+
 ### Population parameters (treat dataset as population)
 - \(\mu\) = population mean of heights
 - \(\sigma\) = population standard deviation (using `ddof=0`)
@@ -106,8 +107,8 @@ For each \(n\):
 
 Theoretical:
 \[
-\bar{X} \approx N\left(\mu,\frac{\sigma^2}{n}\right), \quad
-SE(\bar{X}) = \frac{\sigma}{\sqrt{n}}
+\bar{X} \approx N\left(\mu,\frac{\sigma^2}{n}\right),\quad
+SE(\bar{X})=\frac{\sigma}{\sqrt{n}}
 \]
 
 ### Summary table
@@ -130,7 +131,7 @@ SE(\bar{X}) = \frac{\sigma}{\sqrt{n}}
 
 Theoretical:
 \[
-Z = \frac{Y - n\mu}{\sigma\sqrt{n}} \approx N(0,1)
+Z=\frac{Y-n\mu}{\sigma\sqrt{n}} \approx N(0,1)
 \]
 
 ### Summary table
@@ -151,40 +152,42 @@ Z = \frac{Y - n\mu}{\sigma\sqrt{n}} \approx N(0,1)
 
 ## Plots
 
-> Note: Right now, the images are stored with these filenames in this folder (no `plots/` subfolder).
-> If you later move them into `plots/`, just update the paths below.
+> **Important:** This README assumes you have uploaded the *new* images inside:
+> `STATISTICS-2-EXTRA_ACTIVITY_5/plots/`
+>
+> If your images are in the main folder instead, remove `plots/` from the paths below.
 
 ### Case I — Sample Means
 **n = 5**  
-![Sample means (n=5)](plotsmeans_n5.png.png)
+![Sample means (n=5)](plots/means_n5.png)
 
 **n = 10**  
-![Sample means (n=10)](plotsmeans_n10.png.png)
+![Sample means (n=10)](plots/means_n10.png)
 
 **n = 30**  
-![Sample means (n=30)](plotsmeans_n30.png.png)
+![Sample means (n=30)](plots/means_n30.png)
 
 **n = 50**  
-![Sample means (n=50)](plotsmeans_n50.png.png)
+![Sample means (n=50)](plots/means_n50.png)
 
 **n = 100**  
-![Sample means (n=100)](plotsmeans_n100.png.png)
+![Sample means (n=100)](plots/means_n100.png)
 
 ### Case II — Standardized Sums (Z)
 **n = 5**  
-![Standardized sums Z (n=5)](plotsz_n5.png.png)
+![Standardized sums Z (n=5)](plots/z_n5.png)
 
 **n = 10**  
-![Standardized sums Z (n=10)](plotsz_n10.png.png)
+![Standardized sums Z (n=10)](plots/z_n10.png)
 
 **n = 30**  
-![Standardized sums Z (n=30)](plotsz_n30.png.png)
+![Standardized sums Z (n=30)](plots/z_n30.png)
 
 **n = 50**  
-![Standardized sums Z (n=50)](plotsz_n50.png.png)
+![Standardized sums Z (n=50)](plots/z_n50.png)
 
 **n = 100**  
-![Standardized sums Z (n=100)](plotsz_n100.png.png)
+![Standardized sums Z (n=100)](plots/z_n100.png)
 
 ---
 
@@ -199,4 +202,3 @@ As \(n\) increases, the match improves in:
 - **Shape** (more bell-shaped histograms).
 
 ---
-
