@@ -1,0 +1,33 @@
+## Plots
+
+### Case I — Sample Means
+**n = 5**  
+![Sample means (n=5)](plotsmeans_n5.png.png)
+
+**n = 10**  
+![Sample means (n=10)](plotsmeans_n10.png.png)
+
+**n = 30**  
+![Sample means (n=30)](plotsmeans_n30.png.png)
+
+**n = 50**  
+![Sample means (n=50)](plotsmeans_n50.png.png)
+
+**n = 100**  
+![Sample means (n=100)](plotsmeans_n100.png.png)
+
+### Case II — Standardized Sums (Z)
+**n = 5**  
+![Standardized sums Z (n=5)](plotsz_n5.png.png)
+
+**n = 10**  
+![Standardized sums Z (n=10)](plotsz_n10.png.png)
+
+**n = 30**  
+![Standardized sums Z (n=30)](plotsz_n30.png.png)
+
+**n = 50**  
+![Standardized sums Z (n=50)](plotsz_n50.png1.png)
+
+**n = 100**  
+![Standardized sums Z (n=100)](plotsz_n100.png.png)
