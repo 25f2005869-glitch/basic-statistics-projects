@@ -47,6 +47,7 @@ Key idea: As \(n\) increases, \(Z\) becomes closer to standard normal.
 ---
 
 ## Requirements
+Notebook uses:
 - Python 3
 - numpy
 - pandas
@@ -80,7 +81,7 @@ pip install numpy pandas matplotlib scipy openpyxl
 ## Notebook summary (Method)
 
 ### Population parameters (treat dataset as population)
-- \(\mu\) = population mean of heights
+- \(\mu\) = population mean of heights  
 - \(\sigma\) = population standard deviation (using `ddof=0`)
 
 ### Experiment settings
@@ -152,53 +153,54 @@ Z=\frac{Y-n\mu}{\sigma\sqrt{n}} \approx N(0,1)
 
 ## Plots
 
-> **Important:** This README assumes you have uploaded the *new* images inside:
-> `STATISTICS-2-EXTRA_ACTIVITY_5/plots/`
->
-> If your images are in the main folder instead, remove `plots/` from the paths below.
-
 ### Case I — Sample Means
 **n = 5**  
-![Sample means (n=5)](plots/means_n5.png)
+![Sample means (n=5)](plotsmeans_n5.png.png)
 
 **n = 10**  
-![Sample means (n=10)](plots/means_n10.png)
+![Sample means (n=10)](plotsmeans_n10.png.png)
 
 **n = 30**  
-![Sample means (n=30)](plots/means_n30.png)
+![Sample means (n=30)](plotsmeans_n30.png.png)
 
 **n = 50**  
-![Sample means (n=50)](plots/means_n50.png)
+![Sample means (n=50)](plotsmeans_n50.png.png)
 
 **n = 100**  
-![Sample means (n=100)](plots/means_n100.png)
+![Sample means (n=100)](plotsmeans_n100.png.png)
 
 ### Case II — Standardized Sums (Z)
 **n = 5**  
-![Standardized sums Z (n=5)](plots/z_n5.png)
+![Standardized sums Z (n=5)](plotsz_n5.png.png)
 
 **n = 10**  
-![Standardized sums Z (n=10)](plots/z_n10.png)
+![Standardized sums Z (n=10)](plotsz_n10.png.png)
 
 **n = 30**  
-![Standardized sums Z (n=30)](plots/z_n30.png)
+![Standardized sums Z (n=30)](plotsz_n30.png.png)
 
 **n = 50**  
-![Standardized sums Z (n=50)](plots/z_n50.png)
+![Standardized sums Z (n=50)](plotsz_n50.png1.png)
 
 **n = 100**  
-![Standardized sums Z (n=100)](plots/z_n100.png)
+![Standardized sums Z (n=100)](plotsz_n100.png.png)
 
 ---
 
 ## Conclusion
 Across both cases, results validate the CLT:
-- \(\bar{X}\) approaches \(N(\mu,\sigma^2/n)\),
-- and \(Z\) approaches \(N(0,1)\) as \(n\) increases.
+
+- \(\bar{X}\) approaches \(N(\mu,\sigma^2/n)\)
+- \(Z\) approaches \(N(0,1)\) as \(n\) increases
 
 As \(n\) increases, the match improves in:
-- **Center** (closer to theoretical mean),
-- **Spread** (closer to \(σ/\sqrt{n}\) or 1),
-- **Shape** (more bell-shaped histograms).
+- **Center** (closer to theoretical mean)
+- **Spread** (closer to \(σ/\sqrt{n}\) or 1)
+- **Shape** (more bell-shaped histograms)
 
 ---
+
+## Notes / Common issues
+- `pd.read_excel('')` me path blank mat chhodo—correct path do.
+- Ensure column name is exactly `Height` (case-sensitive).
+- Colab Drive path usually: `/content/gdrive/MyDrive/...`
