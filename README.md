@@ -1,98 +1,117 @@
-# Basic Statistics Projects
+# Basic Statistics Projects (Statistics 1 & Statistics 2)
 
-Extra activities, practice problems, and mini-projects for a **Statistics 1** course.  
-This repository focuses on **core statistical concepts** and **data visualization** using **Excel** and a small **Python (Jupyter) simulation**.
+Extra activities, practice problems, and mini-projects for **Statistics 1** and **Statistics 2**.
 
----
-
-## Contents (Repository Files)
-
-- **Jupyter Notebook**
-  - `statistics_activity_2.ipynb` — Monte Carlo simulation (fair die throws) to compare theoretical vs experimental probabilities
-- **Excel Projects / Activities**
-  - `project 2.1.xlsx`
-  - `project 2.2.xlsx`
-  - `project 3.xlsx`
-  - `STATISTICS - project - 4.xlsx`
-- **Presentation**
-  - `Statistics_Extra_Activities_Presentation.pptx`
-- **Image**
-  - `statistics_project_4_chart.png`
+This repository focuses on:
+- **Descriptive statistics**
+- **Probability basics**
+- **Data visualization (charts & graphs)**
+- Some **Python (Jupyter/Colab) simulations** (Monte Carlo + CLT)
 
 ---
 
-## Topics Covered
+## Repository Structure (Main)
 
-- Descriptive Statistics
-- Mean, Median, Mode
-- Variance & Standard Deviation
-- Probability Basics
-- Data Visualization (charts & graphs)
+### Statistics 1 — Extra Activities
+
+#### 1) `STATISTICS-1-EXTRA_ACTIVITY_2` (Excel)
+- Files:
+  - `Activity 2.1.xlsx`
+  - `Activity 2.2.xlsx`
+  - `README.md`
+
+#### 2) `STATISTICS-1-EXTRA_ACTIVITY_3` (Excel + PNG outputs)
+- Main file:
+  - `ACTIVITY 3.xlsx`
+- Preview images (shown in that folder README):
+  - `ACTIVITY_3_Mean.png`
+  - `ACTIVITY_3_Median.png`
+  - `ACTIVITY_3_Mode.png`
+  - `ACTIVITY_3_Interpretetion.png`
+  - `ACTIVITY_3_Reading score vs Writing score.png`
+- Documentation:
+  - `README.md`
+
+#### 3) `STATISTICS-1-EXTRA_ACTIVITY_4` (Excel + chart preview)
+- Files:
+  - `STATISTICS - 1 Activity - 4.xlsx`
+  - `statistics_activity_4_chart.png`
+  - `README.md` (includes image preview)
+
+---
+
+### Statistics 2 — Extra Activities
+
+#### 1) `STATISTICS-2-EXTRA_ACTIVITY_1` (Dataset analysis)
+- Files:
+  - `STATISTICS - 2 ACTIVITY 1.xlsx`
+  - `README.md` (Netflix Movies & TV Shows dataset analysis guide)
+
+#### 2) `STATISTICS-2-EXTRA_ACTIVITY_2` (Dice probability — Monte Carlo)
+- Files:
+  - `ACTIVITY_2.ipynb` (simulation notebook)
+  - `ACTIVITY-2.docx` (write-up)
+  - `ACTIVITY-2.png` (preview image)
+  - `README.md` (includes GUI/preview image)
+
+#### 3) `STATISTICS-2-EXTRA_ACTIVITY_3` (Corporate bond ratios analysis)
+- Files:
+  - `EXTRA ACTIVITY- 3.xlsx`
+  - `ACTIVITY - 3( DOCS).docx`
+  - Scatterplots:
+    - `QuickRatio vs. CurrentRatio.png`
+    - `CashRatio vs. QuickRatio.png`
+    - `CashRatio vs. CurrentRatio.png`
+  - `Screenshot 2026-03-02 110810.png`
+  - `README.md` (includes scatterplot images)
+
+#### 4) `STATISTICS-2-EXTRA_ACTIVITY_4` (Google quarterly profit + Normal model)
+- Files:
+  - `ACTIVITY-4.xlsx`
+  - `ACTIVITY-4.docx`
+  - Images (shown in that folder README):
+    - `profit_vs_quarters.png.png`
+    - `probability_curve.png.png`
+  - `README.md`
+
+#### 5) `STATISTICS-2-EXTRA_ACTIVITY_5` (Central Limit Theorem — CLT)
+- Files:
+  - `Activity_5_(Colab).ipynb`
+  - `ACTIVITY-5(1).xlsx`
+  - `ACTIVITY-5.2.docx`
+  - Multiple plot images (shown in that folder README)
+  - `README.md`
+  - (extra) nested `plots/.gitkeep` inside `STATISTICS-2-EXTRA_ACTIVITY_5/STATISTICS-2-EXTRA_ACTIVITY_5/`
 
 ---
 
 ## Tools Used
-
 - **Microsoft Excel**
-- **Microsoft PowerPoint**
-- **Python 3 + Jupyter Notebook/Lab** (for `statistics_activity_2.ipynb`)
+- **Python 3**
+- **Jupyter Notebook / JupyterLab**
+- **Google Colab** (recommended for some notebooks)
+- Libraries used in notebooks may include:
+  - `numpy`, `pandas`, `matplotlib`, `scipy`, `openpyxl`
 
 ---
 
 ## How to Use
 
-### Option A: Excel / PowerPoint (No coding)
-1. Download or clone the repository.
-2. Open the `.xlsx` files in **Microsoft Excel**.
-3. Open `Statistics_Extra_Activities_Presentation.pptx` in **PowerPoint**.
-4. Complete the activities and update charts/analysis as needed.
+### Option A: Excel (No coding)
+1. Open any `.xlsx` file inside the activity folders.
+2. Save your own copy (recommended).
+3. Complete calculations + charts as required.
 
-### Option B: Run the Jupyter Notebook (Python)
-**Requirements**
-- Python 3
-- Jupyter Notebook or JupyterLab
-- `numpy`
-
-**Run locally**
-```bash
-# 1) (optional) create & activate a virtual environment
-python -m venv .venv
-
-# Windows:
-.venv\Scripts\activate
-
-# macOS/Linux:
-source .venv/bin/activate
-
-# 2) install dependencies
-pip install numpy jupyter
-
-# 3) start Jupyter
-jupyter notebook
-# or
-jupyter lab
-```
-
-Then open:
-- `statistics_activity_2.ipynb`
-
-**What the notebook demonstrates**
-- Simulates rolling a fair die **10, 50, and 100 times**
-- Prints:
-  - theoretical probabilities (1/6 each)
-  - Monte Carlo probabilities from the simulation
-- Shows how results generally get closer to the theoretical values as trials increase (Law of Large Numbers)
+### Option B: Run notebooks (Python / Jupyter / Colab)
+- For local run (example):
+  ```bash
+  pip install numpy pandas matplotlib scipy openpyxl notebook
+  jupyter notebook
+  ```
+- Or open `.ipynb` in **Google Colab** and run cells.
 
 ---
 
-## Notes / Known Issues
-
-- There is currently **no** `requirements.txt` or `environment.yml`.  
-  The notebook can be run with: `pip install numpy jupyter`.
-- If you want, you can add a `requirements.txt` later for easier setup.
-
----
-
-## License
-
-No license file is included yet. If you want this to be reusable by others, consider adding an open-source license (e.g., MIT).
+## Notes
+- Many folders have their own **README.md** with details and embedded images.
+- No license file included yet. Add MIT/Apache-2.0 if you want public reuse.
