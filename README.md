@@ -115,3 +115,4 @@ This repository focuses on:
 ## Notes
 - Many folders have their own **README.md** with details and embedded images.
 - No license file included yet. Add MIT/Apache-2.0 if you want public reuse.
+- Direct commit for YOLO
